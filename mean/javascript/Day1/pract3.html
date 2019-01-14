@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./simplestyle.css"/>
+    <script src='./funct.js'></script>
+</head>
+<body>
+    <b>Addition is <span id='addSpan'></span></b>
+    <br>
+    <b>Multiplication is <span id='multSpan'></span></b>
+    <script>
+          var no1=parseInt(prompt('Please Enter no1: ',10));
+          var no2=parseInt(prompt('Please Enter no1: ',20));
+
+        //   function add(no1,no2){
+        //       return no1+no2;
+        //   }
+        //   function mult(no1,no2){
+        //       return no1*no2;
+        //   }
+
+          var result=add(no1,no2);
+          document.getElementById('addSpan').innerHTML=result;
+          result=mult(no1,no2);
+          document.getElementById('multSpan').innerHTML=result;
+
+
+            if(confirm('Do you wanna format the persi')){
+                alert("You'r a wise person");
+            }
+            else
+            alert("Dayum");
+    </script>
+  
+</body>
+</html>

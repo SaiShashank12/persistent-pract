@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    
+</head>
+<body>
+    <p id=pract1> hey my father</p>
+    <script>
+    function foo(){
+        document.getElementById("pract1").innerHTML="<h1> Modified Text</h1>"
+    }
+    function bar(){
+        if(this.readyState=="interactive"){
+            alert("document.readystatechange "+this.readyState)
+        }
+        document.getElementById("pract1").innerHTML="<h1> half dead  yen</h1>"
+    }
+    document.onreadystatechange=bar
+    window.onload=foo;
+        </script>
+</body>
+</html>

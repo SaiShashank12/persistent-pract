@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //overriding 
+        function getarg(){
+            document.write('<br/> Inside getArg1');
+
+            for(var i in arguments){
+                document.write('<br/>'+arguments[i]);
+            }
+            document.write('<br/>') 
+        }
+        function getarg(x,y,z){
+            document.write('<br/> Inside getArg2');
+
+            for(var i in arguments){
+                document.write('<br/>'+arguments[i]);
+            }
+            document.write('<br/>') 
+        }
+        getarg();
+        getarg(4,5,6);
+        getarg(11.11,'as',true,45);
+
+        </script>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //Ananymous variable
+        "abcd",10,234,[2,3,4],null;
+
+        //Ananymous function
+        //Usage
+        //In place of callback function
+        //self Execution Funtion or
+        //IIFE - Immediation Invoked Function Expression
+
+        //callback function -Function defination  is written by 
+        // your  program, your  program doesn't  call it ,it is 
+        // being called by someone else - operation system ,
+        // parellely running thread , hardware or any other module
+
+        //.dll
+
+
+        // function add(funct1,funct2){
+        //     return funct1()+funct2();
+        // }
+        // function one(){
+        //     return 1;
+        // }
+        // function two(){
+        //     return 2;
+        // }
+
+        // console.log(add(one,two));
+
+        // console.log(add(function(){return 1;},function(){return 2;}));
+
+
+        //self executing function
+        for(var i=0;i<5;i++){
+        (function(n){
+            alert('hey man are you okay'+n);
+        })(i);}
+        </script>
+</body>
+</html>

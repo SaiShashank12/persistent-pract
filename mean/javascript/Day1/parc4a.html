@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //scope
+        // 'use strict'
+        // var g=9;
+        // //any local varible not block level scope it's function level scope
+        // // JavaScript Hoisting happen -variables are shifted at the first of the function
+        // function foo(){
+        //     var l=5;
+        //     alert('g '+g+' l '+l+' x '+x);
+        //     {
+        //         var x=6;
+        //         alert('g '+g+' l '+l+ ' x '+x);
+        //     }
+        //     var y=7;
+        //     alert('g '+g+' l '+l+ ' x '+x+' y '+y);
+        // }
+        // foo();
+
+        // //function defination
+        // sayhello('sai','21')
+        //   //function decalration syntax 
+        //   function sayhello(name,age){
+        //       alert('name '+name.toUpperCase()+' age '+age);
+        //   }
+        // //function expression syntax 
+        // //display('sayali') <== cannot be called.
+        //   var display=function(name){
+        //       alert('Welcome to the begining '+name);
+        //   }
+        //   display('sai');
+
+        //parseint and number
+
+        document.write('<br />'+parseInt('123acb'))
+        document.write('<br />'+Number('123abc'))
+        document.write('<br />'+Number('123e-2'))
+        document.write('<br />'+parseInt('123e-2'))
+        document.write('<br />'+parseInt('101',10));
+        document.write('<br />'+parseInt('101',20));
+        </script>
+</body>
+</html>
