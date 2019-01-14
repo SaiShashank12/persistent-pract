@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
+    <b> Welcome to the bank</b>
+    <script>
+        var bank= [
+                    {
+                    name: 'JOHN',
+                    account: 'Saving',
+                    AccountStatus: 'blocked'
+                    },
+                    {
+                    name: 'KATE ',
+                    account: 'Current',
+                    AccountStatus: 'active'
+                    },
+                    {
+                    name: 'MIKE',
+                    account: 'Saving',
+                    AccountStatus: 'active'
+                    }];
+
+        var name=prompt("enter the name:");
+        var flag=0;
+        for(var i in bank){
+            if(bank[i].name==name){
+                flag=1;
+                if(bank[i].AccountStatus!='blocked')
+                    document.write('<h1> Account is Active </h1>')
+                else
+                    document.write('<h1> You need to activate your account </h1>')
+            }
+
+        }
+        if(flag==0)
+        document.write('<h1> Cannot be found</h1>')
+
+    </script>
+</body>
+</html>

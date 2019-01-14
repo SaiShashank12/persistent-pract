@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var opt=prompt('the temperature is in celcius or farhenite?');
+        var f;
+        var c;
+        if(opt=='celcius'){
+        f=parseInt(prompt('enter the temperature',0))
+        c=5*((f-32)/9);
+        document.write('<h1>The temp in celcius '+c+'</h1>');}
+        else if(opt=='farhenite'){
+            c=parseInt(prompt('enter the temperature',0))
+            f=(9/5)*c+32
+        document.write('<h1>The temp in farhenite '+f+'</h1>');
+        }
+    </script>
+</body>
+</html>
